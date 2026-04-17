@@ -1,0 +1,649 @@
+@prefix : <http://example.org/meddevices#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://example.org/meddevices#> .
+
+<http://example.org/meddevices#> rdf:type owl:Ontology ;
+                                  dcterms:created "16-04-2026" ;
+                                  dcterms:creator "Luke Eduard Belda de Vial" ;
+                                  dcterms:description "Ontology for high-risk medical devices and also in vitro diagnostic devices based on  EUDAMED data." ;
+                                  dcterms:title "HighRiskAndInVitroMedicalDevicesOntology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/meddevices#hasFSCA
+:hasFSCA rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isFSCAForIncident ;
+         rdfs:domain :Incident ;
+         rdfs:range :FSCA ;
+         rdfs:comment "Relates an incident to theFSCA taken in response to it."@en ;
+         rdfs:label "has FSCA"@en .
+
+
+###  http://example.org/meddevices#hasIncident
+:hasIncident rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isIncidentOf ;
+             rdfs:domain :MedicalDevice ;
+             rdfs:range :Incident ;
+             rdfs:comment "Relates the medical device to an incident."@en ;
+             rdfs:label "has incident"@en .
+
+
+###  http://example.org/meddevices#hasManufacturer
+:hasManufacturer rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :manufactures ;
+                 rdfs:domain :MedicalDevice ;
+                 rdfs:range :Manufacturer ;
+                 rdfs:comment "Relates a medical device to the manufacturer"@en ;
+                 rdfs:label "has manufacturer"@en .
+
+
+###  http://example.org/meddevices#involvesRisk
+:involvesRisk rdf:type owl:ObjectProperty ;
+              rdfs:domain :Incident ;
+              rdfs:range :Risk ;
+              rdfs:comment "Relates an incident to the risk."@en ;
+              rdfs:label "involves risk"@en .
+
+
+###  http://example.org/meddevices#isAffectedByFSCA
+:isAffectedByFSCA rdf:type owl:ObjectProperty ;
+                  rdfs:domain :MedicalDevice .
+
+
+###  http://example.org/meddevices#isFSCAForIncident
+:isFSCAForIncident rdf:type owl:ObjectProperty ;
+                   rdfs:domain :FSCA ;
+                   rdfs:range :Incident ;
+                   rdfs:comment "Relates a FSCA to the incident."@en ;
+                   rdfs:label "is FSCA for incident"@en .
+
+
+###  http://example.org/meddevices#isIncidentOf
+:isIncidentOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :Incident ;
+              rdfs:range :MedicalDevice ;
+              rdfs:comment "Relates the incident to the medical device."@en ;
+              rdfs:label "is incident of"@en .
+
+
+###  http://example.org/meddevices#manufactures
+:manufactures rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Manufacturer ;
+              rdfs:range :MedicalDevice ;
+              rdfs:comment "Relates a manufacturer to a medical device that it produces."@en ;
+              rdfs:label "manufactures"@en .
+
+
+###  http://example.org/meddevices#reportedBy
+:reportedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range :Manufacturer ;
+            rdfs:comment "Relates an incident to the manufacturer that reported it."@en ;
+            rdfs:label "reported by"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/meddevices#actionDate
+:actionDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :FSCA ;
+            rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#affectedDeviceType
+:affectedDeviceType rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Risk ;
+                    rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#authorizationNumber
+:authorizationNumber rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Manufacturer ;
+                     rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#closureDate
+:closureDate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :FSCA ;
+             rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#competentAuthority
+:competentAuthority rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Manufacturer ;
+                    rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#contactEmail
+:contactEmail rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Manufacturer ;
+              rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#correctiveActionTaken
+:correctiveActionTaken rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Incident ;
+                       rdfs:range xsd:boolean .
+
+
+###  http://example.org/meddevices#countriesAffected
+:countriesAffected rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :FSCA ;
+                   rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#country
+:country rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Manufacturer ;
+         rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#countryReported
+:countryReported rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Incident ;
+                 rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#detectionDate
+:detectionDate rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#deviceName
+:deviceName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :MedicalDevice ;
+            rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#devicesAffectedCount
+:devicesAffectedCount rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :FSCA ;
+                      rdfs:range xsd:integer .
+
+
+###  http://example.org/meddevices#eudamedFSCARef
+:eudamedFSCARef rdf:type owl:DatatypeProperty ;
+                rdfs:domain :FSCA ;
+                rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#eudamedIncidentRef
+:eudamedIncidentRef rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Incident ;
+                    rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#eudamedSRN
+:eudamedSRN rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Manufacturer ;
+            rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#eventDate
+:eventDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Incident ;
+           rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#fscaDescription
+:fscaDescription rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :FSCA ;
+                 rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#imdrfCode
+:imdrfCode rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Risk ;
+           rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#incidentDescription
+:incidentDescription rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Incident ;
+                     rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#intendedPurpose
+:intendedPurpose rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :MedicalDevice ;
+                 rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#isActive
+:isActive rdf:type owl:DatatypeProperty ;
+          rdfs:domain :MedicalDevice ;
+          rdfs:range xsd:boolean .
+
+
+###  http://example.org/meddevices#isIVD
+:isIVD rdf:type owl:DatatypeProperty ;
+       rdfs:domain :MedicalDevice ;
+       rdfs:range xsd:boolean .
+
+
+###  http://example.org/meddevices#isImplantable
+:isImplantable rdf:type owl:DatatypeProperty ;
+               rdfs:domain :MedicalDevice ;
+               rdfs:range xsd:boolean .
+
+
+###  http://example.org/meddevices#isReusable
+:isReusable rdf:type owl:DatatypeProperty ;
+            rdfs:domain :MedicalDevice ;
+            rdfs:range xsd:boolean .
+
+
+###  http://example.org/meddevices#outcome
+:outcome rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Incident ;
+         rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#patientAge
+:patientAge rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range xsd:integer .
+
+
+###  http://example.org/meddevices#patientSex
+:patientSex rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#probability
+:probability rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#regulatoryFramework
+:regulatoryFramework rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :MedicalDevice ;
+                     rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#reportDate
+:reportDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#riskCategory
+:riskCategory rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Risk ;
+              rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#riskDescription
+:riskDescription rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Risk ;
+                 rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#riskName
+:riskName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Risk ;
+          rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#riskType
+:riskType rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Risk ;
+          rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#scope
+:scope rdf:type owl:DatatypeProperty ;
+       rdfs:domain :FSCA ;
+       rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#severity
+:severity rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Risk ;
+          rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:domain :FSCA ;
+        rdfs:range xsd:string .
+
+
+###  http://example.org/meddevices#udiDI
+:udiDI rdf:type owl:DatatypeProperty ;
+       rdfs:domain :MedicalDevice ;
+       rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2006/vcard/ns#organization-name
+vcard:organization-name rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Manufacturer ;
+                        rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/meddevices#ClassI
+:ClassI rdf:type owl:Class ;
+        rdfs:subClassOf :RiskClass ;
+        owl:disjointWith :ClassIII ,
+                         :ClassIIa ,
+                         :ClassIIb .
+
+
+###  http://example.org/meddevices#ClassIII
+:ClassIII rdf:type owl:Class ;
+          rdfs:subClassOf :RiskClass ;
+          owl:disjointWith :ClassIIa ,
+                           :ClassIIb .
+
+
+###  http://example.org/meddevices#ClassIIa
+:ClassIIa rdf:type owl:Class ;
+          rdfs:subClassOf :RiskClass ;
+          owl:disjointWith :ClassIIb .
+
+
+###  http://example.org/meddevices#ClassIIb
+:ClassIIb rdf:type owl:Class ;
+          rdfs:subClassOf :RiskClass .
+
+
+###  http://example.org/meddevices#FSCA
+:FSCA rdf:type owl:Class ;
+      rdfs:subClassOf :MedicalEntity ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :isFSCAForIncident ;
+                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Incident
+                      ] ;
+      rdfs:comment "Field safety corrective action taken as a response to a reported incident."@en ;
+      rdfs:label "Field safety corrective action"@en .
+
+
+###  http://example.org/meddevices#HighRiskMedicalDevice
+:HighRiskMedicalDevice rdf:type owl:Class ;
+                       rdfs:subClassOf :MedicalDevice ;
+                       rdfs:comment "Device classified as high risk."@en ;
+                       rdfs:label "High-risk medical device"@en .
+
+
+###  http://example.org/meddevices#IVDClassA
+:IVDClassA rdf:type owl:Class ;
+           rdfs:subClassOf :InVitroDiagnosticDevice ;
+           owl:disjointWith :IVDClassB ,
+                            :IVDClassC ,
+                            :IVDClassD .
+
+
+###  http://example.org/meddevices#IVDClassB
+:IVDClassB rdf:type owl:Class ;
+           rdfs:subClassOf :InVitroDiagnosticDevice ;
+           owl:disjointWith :IVDClassC ,
+                            :IVDClassD .
+
+
+###  http://example.org/meddevices#IVDClassC
+:IVDClassC rdf:type owl:Class ;
+           rdfs:subClassOf :InVitroDiagnosticDevice ;
+           owl:disjointWith :IVDClassD .
+
+
+###  http://example.org/meddevices#IVDClassD
+:IVDClassD rdf:type owl:Class ;
+           rdfs:subClassOf :InVitroDiagnosticDevice .
+
+
+###  http://example.org/meddevices#InSituCorrection
+:InSituCorrection rdf:type owl:Class ;
+                  rdfs:subClassOf :FSCA ;
+                  owl:disjointWith :Recall ,
+                                   :SafetyAlert ,
+                                   :UserNotice .
+
+
+###  http://example.org/meddevices#InVitroDiagnosticDevice
+:InVitroDiagnosticDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :MedicalDevice ;
+                         rdfs:comment "Device made for in vitro diagnostic use."@en ;
+                         rdfs:label "In vitro diagnostic device"@en .
+
+
+###  http://example.org/meddevices#Incident
+:Incident rdf:type owl:Class ;
+          rdfs:subClassOf :MedicalEntity ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :involvesRisk ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Risk
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isIncidentOf ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :MedicalDevice
+                          ] ;
+          rdfs:comment "Reported incident linked to a medical device." ;
+          rdfs:label "Incident"@en .
+
+
+###  http://example.org/meddevices#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              rdfs:subClassOf :MedicalEntity ;
+              rdfs:comment "Organization responsible for producing the medical device."@en ;
+              rdfs:label "Manufacturer"@en .
+
+
+###  http://example.org/meddevices#MedicalDevice
+:MedicalDevice rdf:type owl:Class ;
+               rdfs:subClassOf :MedicalEntity ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasManufacturer ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Manufacturer
+                               ] ;
+               rdfs:comment "Device in the catalogue, includes high-risk devices and in vitro diagnostic devices."@en ;
+               rdfs:label "Medical device"@en .
+
+
+###  http://example.org/meddevices#MedicalEntity
+:MedicalEntity rdf:type owl:Class ;
+               rdfs:comment "Class that contains all the main entities represented in the ontology."@en ;
+               rdfs:label "Medical entity"@en .
+
+
+###  http://example.org/meddevices#NearMissIncident
+:NearMissIncident rdf:type owl:Class ;
+                  rdfs:subClassOf :Incident ;
+                  owl:disjointWith :SeriousIncident .
+
+
+###  http://example.org/meddevices#Recall
+:Recall rdf:type owl:Class ;
+        rdfs:subClassOf :FSCA ;
+        owl:disjointWith :SafetyAlert ,
+                         :UserNotice .
+
+
+###  http://example.org/meddevices#Risk
+:Risk rdf:type owl:Class ;
+      rdfs:subClassOf :MedicalEntity ;
+      rdfs:comment "Risk identified for a medical device." ;
+      rdfs:label "Risk"@en .
+
+
+###  http://example.org/meddevices#RiskClass
+:RiskClass rdf:type owl:Class ;
+           rdfs:subClassOf :MedicalEntity ;
+           rdfs:comment "A risk classification used to classify medical devices according to their risk level."@en ;
+           rdfs:label "Risk class"@en .
+
+
+###  http://example.org/meddevices#SafetyAlert
+:SafetyAlert rdf:type owl:Class ;
+             rdfs:subClassOf :FSCA ;
+             owl:disjointWith :UserNotice .
+
+
+###  http://example.org/meddevices#SeriousIncident
+:SeriousIncident rdf:type owl:Class ;
+                 rdfs:subClassOf :Incident .
+
+
+###  http://example.org/meddevices#UserNotice
+:UserNotice rdf:type owl:Class ;
+            rdfs:subClassOf :FSCA .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/meddevices#DEV-001
+:DEV-001 rdf:type owl:NamedIndividual ;
+         :hasManufacturer :MAN-001 ;
+         :deviceName "HeartMate 3 LVAD" ;
+         :intendedPurpose "Ventricular assist device for end-stage heart failure" ;
+         :isActive "true"^^xsd:boolean ;
+         :isIVD "false"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :regulatoryFramework "MDR" ;
+         :udiDI "(01)00380740009095" .
+
+
+###  http://example.org/meddevices#FSCA-001
+:FSCA-001 rdf:type owl:NamedIndividual ,
+                   :SafetyAlert ;
+          :isFSCAForIncident :INC-001 ;
+          :actionDate "2024-02-01" ;
+          :countriesAffected "EU-wide" ;
+          :devicesAffectedCount 850 ;
+          :eudamedFSCARef "EU-FSCA-2024-000001" ;
+          :fscaDescription "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0." ;
+          :scope "All HeartMate 3 LVAD units implanted since 2020" ;
+          :status "Open" .
+
+
+###  http://example.org/meddevices#INC-001
+:INC-001 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :involvesRisk :RSK-003 ;
+         :isIncidentOf :DEV-001 ;
+         :correctiveActionTaken "true"^^xsd:boolean ;
+         :countryReported "Germany" ;
+         :description "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography." ;
+         :detectionDate "2024-01-10" ;
+         :eudamedIncidentRef "EU-INC-2024-000001" ;
+         :eventDate "2024-01-08" ;
+         :outcome "Serious patient injury - embolic stroke" ;
+         :patientAge 58 ;
+         :patientSex "Male" ;
+         :reportDate "2024-01-15" .
+
+
+###  http://example.org/meddevices#MAN-001
+:MAN-001 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :authorizationNumber "IE/2017/001234" ;
+         :contactEmail "regulatory@medtronic.com" ;
+         :country "Ireland" ;
+         :eudamedSRN "SRN-IE-MED-0001" ;
+         vcard:organization-name "Medtronic plc" .
+
+
+###  http://example.org/meddevices#RSK-003
+:RSK-003 rdf:type owl:NamedIndividual ,
+                  :Risk ;
+         :affectedDeviceType "ImplantableActiveDevice" ;
+         :imdrfCode "A0201" ;
+         :probability "Low" ;
+         :riskCategory "Patient Harm" ;
+         :riskDescription "Thrombus formation on device surface causing embolic events" ;
+         :riskName "Thrombosis - device-related" ;
+         :riskType "InjuryRisk" ;
+         :severity "Critical" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:d rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:i rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "R1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MedicalDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasIncident ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :i
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isIncidentOf ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :i ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,1843 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://example.org/meddevices", "http://www.w3.org/2006/vcard/ns" ],
+    "title" : {
+      "undefined" : "HighRiskAndInVitroMedicalDevicesOntology"
+    },
+    "iri" : "http://example.org/meddevices#",
+    "author" : [ "Luke Eduard Belda de Vial" ],
+    "description" : {
+      "undefined" : "Ontology for high-risk medical devices and also in vitro diagnostic devices based on  EUDAMED data."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Luke Eduard Belda de Vial",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "16-04-2026",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "HighRiskAndInVitroMedicalDevicesOntology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "23",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#RiskClass",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskClass",
+      "en" : "Risk class"
+    },
+    "subClasses" : [ "12", "13", "14", "15" ],
+    "comment" : {
+      "en" : "A risk classification used to classify medical devices according to their risk level."
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://example.org/meddevices#Manufacturer",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/meddevices#MAN-001",
+      "baseIri" : "http://example.org/meddevices",
+      "labels" : {
+        "IRI-based" : "MAN-001"
+      }
+    } ],
+    "comment" : {
+      "en" : "Organization responsible for producing the medical device."
+    },
+    "id" : "8",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://example.org/meddevices#Recall",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall"
+    },
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#IVDClassD",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDClassD"
+    },
+    "id" : "28",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#IVDClassA",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDClassA"
+    },
+    "id" : "34",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#IVDClassC",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDClassC"
+    },
+    "id" : "41",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#IVDClassB",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDClassB"
+    },
+    "id" : "42",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://example.org/meddevices#ClassI",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassI"
+    },
+    "id" : "15",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#InVitroDiagnosticDevice",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "en" : "In vitro diagnostic device"
+    },
+    "subClasses" : [ "28", "34", "41", "42" ],
+    "comment" : {
+      "en" : "Device made for in vitro diagnostic use."
+    },
+    "id" : "29",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://example.org/meddevices#MedicalDevice",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalDevice",
+      "en" : "Medical device"
+    },
+    "subClasses" : [ "51", "29" ],
+    "comment" : {
+      "en" : "Device in the catalogue, includes high-risk devices and in vitro diagnostic devices."
+    },
+    "id" : "5",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#MedicalEntity",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalEntity",
+      "en" : "Medical entity"
+    },
+    "subClasses" : [ "8", "2", "17", "5", "20", "10" ],
+    "comment" : {
+      "en" : "Class that contains all the main entities represented in the ontology."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#UserNotice",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserNotice"
+    },
+    "id" : "56",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://example.org/meddevices#HighRiskMedicalDevice",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighRiskMedicalDevice",
+      "en" : "High-risk medical device"
+    },
+    "comment" : {
+      "en" : "Device classified as high risk."
+    },
+    "id" : "51",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#SeriousIncident",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/meddevices#INC-001",
+      "baseIri" : "http://example.org/meddevices",
+      "labels" : {
+        "IRI-based" : "INC-001"
+      }
+    } ],
+    "id" : "68",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "38",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "23",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#NearMissIncident",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NearMissIncident"
+    },
+    "id" : "67",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/meddevices#SafetyAlert",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/meddevices#FSCA-001",
+      "baseIri" : "http://example.org/meddevices",
+      "labels" : {
+        "IRI-based" : "FSCA-001"
+      }
+    } ],
+    "id" : "55",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://example.org/meddevices#Risk",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/meddevices#RSK-003",
+      "baseIri" : "http://example.org/meddevices",
+      "labels" : {
+        "IRI-based" : "RSK-003"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk identified for a medical device."
+    },
+    "id" : "20",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://example.org/meddevices#ClassIII",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIII"
+    },
+    "id" : "14",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://example.org/meddevices#InSituCorrection",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection"
+    },
+    "id" : "59",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://example.org/meddevices#Incident",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "subClasses" : [ "68", "67" ],
+    "comment" : {
+      "undefined" : "Reported incident linked to a medical device."
+    },
+    "id" : "2",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://example.org/meddevices#ClassIIa",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIIa"
+    },
+    "id" : "12",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://example.org/meddevices#ClassIIb",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIIb"
+    },
+    "id" : "13",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://example.org/meddevices#FSCA",
+    "baseIri" : "http://example.org/meddevices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FSCA",
+      "en" : "Field safety corrective action"
+    },
+    "subClasses" : [ "16", "56", "55", "59" ],
+    "comment" : {
+      "en" : "Field safety corrective action taken as a response to a reported incident."
+    },
+    "id" : "17",
+    "superClasses" : [ "11" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://example.org/meddevices#patientAge",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "patientAge"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://example.org/meddevices#isImplantable",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isImplantable"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://example.org/meddevices#contactEmail",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "contactEmail"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://example.org/meddevices#involvesRisk",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "involvesRisk",
+      "en" : "involves risk"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Relates an incident to the risk."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "23",
+    "subproperty" : [ "24" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://example.org/meddevices#actionDate",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "actionDate"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://example.org/meddevices#competentAuthority",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "competentAuthority"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://example.org/meddevices#riskType",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "riskType"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://example.org/meddevices#isAffectedByFSCA",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "isAffectedByFSCA"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://example.org/meddevices#isActive",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isActive"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://example.org/meddevices#country",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "country"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://example.org/meddevices#affectedDeviceType",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "affectedDeviceType"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://example.org/meddevices#detectionDate",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "detectionDate"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://example.org/meddevices#intendedPurpose",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "intendedPurpose"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://example.org/meddevices#fscaDescription",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "fscaDescription"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "range" : "56",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "56",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "16",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://example.org/meddevices#riskCategory",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "riskCategory"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://example.org/meddevices#eventDate",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "eventDate"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "range" : "56",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "55",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "28",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://example.org/meddevices#correctiveActionTaken",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "correctiveActionTaken"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "range" : "55",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "28",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://example.org/meddevices#eudamedIncidentRef",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "eudamedIncidentRef"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://example.org/meddevices#reportedBy",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "en" : "reported by"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Relates an incident to the manufacturer that reported it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://example.org/meddevices#outcome",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "outcome"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://example.org/meddevices#manufactures",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "manufactures",
+      "en" : "manufactures"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "Relates a manufacturer to a medical device that it produces."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#organization-name",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "organization-name"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://example.org/meddevices#deviceName",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "deviceName"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://example.org/meddevices#countriesAffected",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "countriesAffected"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "range" : "11",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "5",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "11",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "11",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://example.org/meddevices#incidentDescription",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "incidentDescription"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://example.org/meddevices#hasManufacturer",
+    "inverse" : "24",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "en" : "has manufacturer"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Relates a medical device to the manufacturer"
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "range" : "5",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://example.org/meddevices#authorizationNumber",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "authorizationNumber"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://example.org/meddevices#devicesAffectedCount",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "devicesAffectedCount"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://example.org/meddevices#udiDI",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "udiDI"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "range" : "29",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "29",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "10",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "10",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "29",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://example.org/meddevices#countryReported",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "countryReported"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "range" : "10",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://example.org/meddevices#isReusable",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "isReusable"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://example.org/meddevices#eudamedFSCARef",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "eudamedFSCARef"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://example.org/meddevices#regulatoryFramework",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "regulatoryFramework"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://example.org/meddevices#status",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "status"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://example.org/meddevices#probability",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "probability"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://example.org/meddevices#isIVD",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "isIVD"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://example.org/meddevices#isFSCAForIncident",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isFSCAForIncident",
+      "en" : "is FSCA for incident"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Relates a FSCA to the incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://example.org/meddevices#patientSex",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "patientSex"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://example.org/meddevices#closureDate",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "closureDate"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "range" : "12",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://example.org/meddevices#scope",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "scope"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "129"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "13",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://example.org/meddevices#severity",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "severity"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "41",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "28",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "42",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "41",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://example.org/meddevices#description",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "138"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "14",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://example.org/meddevices#eudamedSRN",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "eudamedSRN"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://example.org/meddevices#imdrfCode",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "imdrfCode"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "range" : "17",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://example.org/meddevices#isIncidentOf",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "isIncidentOf",
+      "en" : "is incident of"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Relates the incident to the medical device."
+    },
+    "attributes" : [ "object" ],
+    "id" : "144"
+  }, {
+    "range" : "17",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "17",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://example.org/meddevices#riskName",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "riskName"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://example.org/meddevices#reportDate",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "reportDate"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://example.org/meddevices#riskDescription",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "riskDescription"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://example.org/meddevices#hasIncident",
+    "inverse" : "144",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasIncident",
+      "en" : "has incident"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Relates the medical device to an incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "151"
+  }, {
+    "range" : "2",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://example.org/meddevices#hasFSCA",
+    "inverse" : "122",
+    "baseIri" : "http://example.org/meddevices",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasFSCA",
+      "en" : "has FSCA"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Relates an incident to theFSCA taken in response to it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "153"
+  }, {
+    "range" : "11",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "11",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "2",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  } ]
+}
